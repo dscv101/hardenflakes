@@ -1,5 +1,3 @@
-{ config, disks ? [ "/dev/nvme0n1" "/dev/sda1" ], ... }:
-
 {
   disko.devices = {
     disk = {
@@ -51,4 +49,5 @@
       };
     };
   };
+};
 }
