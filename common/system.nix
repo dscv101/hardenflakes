@@ -11,7 +11,7 @@
       auto-optimise-store = true; # Optimise syslinks
     };
 
-    package = pkgs.nixUnstable;
+    package = pkgs.nixVersions.git;
 
     gc = {
       automatic = true;
