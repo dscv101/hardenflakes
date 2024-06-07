@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 
 {
-  time.timeZone = "America/Sao_Paulo";
+  time.timeZone = "America/Chicago";
 
   nixpkgs.config.allowUnfree = true;
 
