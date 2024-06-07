@@ -74,7 +74,7 @@
         fsType = "tmpfs";
         mountOptions = [
           "defaults"
-          "size=64G" # 128GB RAM (leaving 64GB for RAM)
+          "size=32G" # 64GB RAM (leaving 32GB for RAM)
           "mode=755"
         ];
       };
