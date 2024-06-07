@@ -82,9 +82,9 @@
 
       flake =
         let
-          stateVersion = "23.11";
+          stateVersion = "24.05";
           darwinStateVersion = 4;
-          homeStateVersion = "23.11";
+          homeStateVersion = "24.05";
         in
         {
           # Configurations for Linux (NixOS) machines
