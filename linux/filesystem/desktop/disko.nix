@@ -40,35 +40,6 @@
           };
         };
       };
-
-      sda1 = {
-        device = builtins.elemAt disks 1;
-        type = "disk";
-        content = {
-          type = "gpt";
-          partitions = {
-            luks = {
-              size = "100%";
-              content = {
-                type = "luks";
-                name = "hdd";
-                settings = {
-                  allowDiscards = true;
-                  keyFile = "/etc/hdd_luks.key";
-                };
-                content = {
-                  type = "filesystem";
-                  format = "ext4";
-                  mountpoint = "/hdd";
-                  mountOptions = [ "noatime" ];
-                };
-              };
-            };
-          };
-        };
-      };
-    };
-
     nodev = {
       "/" = {
         fsType = "tmpfs";
